@@ -6,6 +6,7 @@ import { Hero } from "@/components/hero";
 import { Navbar } from "@/components/navbar";
 import { Reveal } from "@/components/reveal";
 import { Schedule } from "@/components/schedule";
+import { Sponsors } from "@/components/sponsors";
 import { Stats } from "@/components/stats";
 import { Ticker } from "@/components/ticker";
 import { Tracks } from "@/components/tracks";
@@ -34,6 +35,9 @@ export default function Home() {
         </Reveal>
         <Reveal>
           <CTA />
+        </Reveal>
+        <Reveal>
+          <Sponsors />
         </Reveal>
       </main>
       <Footer />

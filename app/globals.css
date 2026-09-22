@@ -739,6 +739,45 @@ details[open] summary::after {
   color: #d5eefc;
 }
 
+.sponsor-row {
+  margin-top: 2rem;
+}
+
+.sponsor-grid {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.sponsor-grid.lg {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.sponsor-grid.md {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.sponsor-grid.sm {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.sponsor-slot {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 8px 22px rgba(8, 30, 50, 0.12);
+}
+
+.sponsor-grid.lg .sponsor-slot {
+  height: 110px;
+}
+
+.sponsor-grid.md .sponsor-slot {
+  height: 86px;
+}
+
+.sponsor-grid.sm .sponsor-slot {
+  height: 68px;
+}
+
 .hero h1 {
   animation: none;
 }
@@ -788,8 +827,11 @@ details[open] summary::after {
 
 @media (max-width: 720px) {
   .fact-grid,
-  .track-board {
-    grid-template-columns: 1fr;
+  .track-board,
+  .sponsor-grid.lg,
+  .sponsor-grid.md,
+  .sponsor-grid.sm {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .track-tile:last-child {

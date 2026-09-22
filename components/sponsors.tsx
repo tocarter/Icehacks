@@ -1,7 +1,7 @@
 const rows = [
   { label: "Gold", n: 3, size: "lg" },
-  { label: "Silver", n: 4, size: "md" },
-  { label: "In-kind", n: 6, size: "sm" },
+  { label: "Silver", n: 3, size: "md" },
+  { label: "In-kind", n: 4, size: "sm" },
 ];
 
 export function Sponsors() {
@@ -14,9 +14,6 @@ export function Sponsors() {
           <br />
           the ice <em>frozen</em>.
         </h2>
-        <p className="lede">
-          Logos go here. Until then, these are empty slots.
-        </p>
         {rows.map((row) => (
           <div key={row.label} className="sponsor-row">
             <p className="kick">{row.label}</p>

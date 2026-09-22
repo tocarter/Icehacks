@@ -36,6 +36,12 @@ yarn-error.log*
 # vercel
 .vercel
 
+# python scratch
+.py_pkgs/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# unused sponsor assets
+/public/sponsor-logos/

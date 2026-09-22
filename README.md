@@ -1,6 +1,6 @@
 # Ice Hacks
 
-Website for Ice Hacks, an online high school hackathon running November 8–15, 2026.
+Website for Ice Hacks, an online high school hackathon running November 8–15, 2026. Hosted by CodeStarters.
 
 ```bash
 npm install

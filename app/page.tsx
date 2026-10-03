@@ -6,6 +6,7 @@ import { Hero } from "@/components/hero";
 import { Navbar } from "@/components/navbar";
 import { Reveal } from "@/components/reveal";
 import { Schedule } from "@/components/schedule";
+import { SectionDivider } from "@/components/section-divider";
 import { Sponsors } from "@/components/sponsors";
 import { Stats } from "@/components/stats";
 import { Ticker } from "@/components/ticker";
@@ -15,29 +16,34 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <Ticker />
       <main>
         <Hero />
+        <Ticker />
         <Reveal>
           <Stats />
         </Reveal>
+        <SectionDivider />
         <Reveal>
           <About />
         </Reveal>
+        <SectionDivider />
         <Reveal>
           <Tracks />
         </Reveal>
+        <SectionDivider />
         <Reveal>
           <Schedule />
         </Reveal>
+        <SectionDivider />
+        <Reveal>
+          <Sponsors />
+        </Reveal>
+        <SectionDivider />
         <Reveal>
           <FAQ />
         </Reveal>
         <Reveal>
           <CTA />
-        </Reveal>
-        <Reveal>
-          <Sponsors />
         </Reveal>
       </main>
       <Footer />

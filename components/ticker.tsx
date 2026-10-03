@@ -5,6 +5,8 @@ const items = [
   "100% free",
   "Opening 6:00 PM PST",
   "Software, hardware, anything",
+  "200+ hackers",
+  "$10K in prizes",
 ];
 
 export function Ticker() {
@@ -15,7 +17,7 @@ export function Ticker() {
         {row.map((t, i) => (
           <span key={i}>
             {t}
-            <i>•</i>
+            <i>❄</i>
           </span>
         ))}
       </div>

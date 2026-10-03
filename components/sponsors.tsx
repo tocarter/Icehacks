@@ -19,7 +19,9 @@ export function Sponsors() {
             <p className="kick">{row.label}</p>
             <div className={`sponsor-grid ${row.size} stagger`}>
               {Array.from({ length: row.n }, (_, i) => (
-                <div key={i} className="sponsor-slot" aria-hidden="true" />
+                <div key={i} className="sponsor-slot">
+                  <span>Your Logo Here</span>
+                </div>
               ))}
             </div>
           </div>

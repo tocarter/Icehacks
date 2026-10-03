@@ -1,10 +1,10 @@
 const people = [
-  "Smaran",
-  "Carter",
-  "Pranav",
-  "Reynash",
-  "Arfan",
-  "Aljer",
+  { name: "Smaran", role: "Lead Organizer" },
+  { name: "Carter", role: "Tech Lead" },
+  { name: "Pranav", role: "Design Lead" },
+  { name: "Reynash", role: "Operations" },
+  { name: "Arfan", role: "Outreach" },
+  { name: "Aljer", role: "Marketing" },
 ];
 
 export function TeamPage() {
@@ -17,12 +17,12 @@ export function TeamPage() {
           High schoolers running Ice Hacks. Want in? Email us.
         </p>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
-          {people.map((name) => (
-            <div key={name} className="felt p-5">
-              <img src="/logo.png" alt="" className="w-10 h-10 object-contain mb-6" />
-              <p className="text-lg font-bold text-white">{name}</p>
+          {people.map((p) => (
+            <div key={p.name} className="felt p-5">
+              <div className="team-avatar mb-6">{p.name[0]}</div>
+              <p className="text-lg font-bold text-white">{p.name}</p>
               <p className="text-[11px] tracking-[0.16em] uppercase text-[#c5ebff] mt-1">
-                Organizer
+                {p.role}
               </p>
             </div>
           ))}

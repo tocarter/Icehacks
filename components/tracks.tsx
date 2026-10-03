@@ -24,7 +24,7 @@ export function Tracks() {
           {tracks.map((t) => (
             <article
               key={t.n}
-              className="felt hang track-tile"
+              className="felt track-tile"
               style={{ ["--tilt"]: t.tilt } as { [key: string]: string }}
             >
               <b>{t.n}</b>

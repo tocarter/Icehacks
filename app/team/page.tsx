@@ -1,5 +1,6 @@
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
+import { Reveal } from "@/components/reveal";
 import { TeamPage } from "@/components/team-page";
 
 export const metadata = {
@@ -12,7 +13,9 @@ export default function Team() {
     <>
       <Navbar />
       <main className="min-h-screen">
-        <TeamPage />
+        <Reveal>
+          <TeamPage />
+        </Reveal>
       </main>
       <Footer />
     </>

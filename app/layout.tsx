@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist_Mono, Iceland } from "next/font/google";
 import { FrostField } from "@/components/frost-field";
 import { IceBits } from "@/components/ice-bits";
+import { Snow } from "@/components/snow";
 import "./globals.css";
 
 const geist = Geist_Mono({
@@ -35,6 +36,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col font-sans overflow-x-hidden">
         <FrostField />
         <IceBits />
+        <Snow />
         {children}
       </body>
     </html>

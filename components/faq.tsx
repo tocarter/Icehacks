@@ -33,13 +33,16 @@ export function FAQ() {
           {faqs.map((f, i) => (
             <details
               key={f.q}
-              className="border-t border-white/15 py-4"
+              className="faq-item"
               open={i === 0}
             >
-              <summary className="cursor-pointer list-none font-bold text-white text-lg">
-                {f.q}
+              <summary>
+                <span>{f.q}</span>
+                <svg className="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6"/></svg>
               </summary>
-              <p className="mt-2 text-[#d5eefc] leading-relaxed">{f.a}</p>
+              <div className="faq-answer">
+                <p>{f.a}</p>
+              </div>
             </details>
           ))}
         </div>

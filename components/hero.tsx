@@ -42,7 +42,14 @@ export function Hero() {
           November 8–15, 2026 · Online · 100% free
         </p>
 
-        <div className="hero-mark in">
+        <img src="/logo.png" alt="Ice Hacks" className="hero-logo in" />
+
+        <div className="hero-mark in shimmer">
+          <div className="hero-aurora" />
+          <div className="spark spark-tl" />
+          <div className="spark spark-tr" />
+          <div className="spark spark-bl" />
+          <div className="spark spark-br" />
           <h1 className="icy-title">
             ICE
             <br />
@@ -89,7 +96,7 @@ export function Hero() {
             </p>
           </div>
           <div className="flex gap-2.5 w-full sm:w-auto">
-            <a href={APPLY} className="btn btn-ice flex-1 sm:flex-initial">
+            <a href={APPLY} className="btn btn-ice btn-glow flex-1 sm:flex-initial">
               Apply
             </a>
             <a href="#about" className="btn btn-quiet flex-1 sm:flex-initial">

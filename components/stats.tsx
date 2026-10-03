@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, Fragment } from "react";
 
 const items = [
   { n: 200, suffix: "+", l: "HACKERS" },
@@ -46,16 +46,19 @@ export function Stats() {
 
   return (
     <div className="ice-strip" ref={ref}>
-      <div className="stagger wrap grid grid-cols-2 md:grid-cols-4 py-8 gap-6 text-center">
+      <div className="stagger wrap grid grid-cols-2 md:flex md:items-center md:justify-center py-8 gap-8 md:gap-12 text-center">
         {items.map((it, i) => (
-          <div key={it.l} className="stat-cell">
-            <b>
-              {it.prefix}
-              {vals[i]}
-              {it.suffix}
-            </b>
-            <i>{it.l}</i>
-          </div>
+          <Fragment key={it.l}>
+            <div className="stat-cell">
+              <b>
+                {it.prefix}
+                {vals[i]}
+                {it.suffix}
+              </b>
+              <i>{it.l}</i>
+            </div>
+            {i < items.length - 1 && <div className="stat-sep hidden md:block" />}
+          </Fragment>
         ))}
       </div>
     </div>

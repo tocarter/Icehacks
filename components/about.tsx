@@ -18,17 +18,21 @@ export function About() {
             {
               t: "Built for first-timers",
               p: "Workshops start from absolute zero, mentors stay around all week, and you do not need a single line of code to apply.",
+              icon: "❄️",
             },
             {
               t: "Everything is covered",
               p: "Entry is free. Software, hardware, design, weird ideas — if it can freeze, it can ship.",
+              icon: "🎯",
             },
             {
               t: "Judged by people who build",
               p: "Mentors and judges who actually make things. The feedback is the prize most people remember.",
+              icon: "⭐",
             },
           ].map((c) => (
             <div key={c.t} className="felt hang p-6">
+              <div className="about-icon">{c.icon}</div>
               <h3 className="text-xl font-bold text-white mb-2">{c.t}</h3>
               <p className="text-[#d5eefc] leading-relaxed">{c.p}</p>
             </div>
